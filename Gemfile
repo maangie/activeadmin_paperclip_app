@@ -37,10 +37,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Ruby on Rails framework for creating elegant backends for website
+# administration.
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a
-  # debugger console
-  gem 'byebug'
+  # powerful alternative to the standard IRB shell for Ruby.
+  gem 'pry-rails'
+  gem 'pry-byebug'
 
   gem 'rspec-rails' # testing framework for Rails 
 end
@@ -54,3 +59,9 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'ffaker' # a rewrite of faker.
+
+  # a fixtures replacement with a straightforward definition syntax.
+  gem 'factory_girl_rails'
+end
