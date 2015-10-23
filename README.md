@@ -1,0 +1,2 @@
+# activeadmin_paperclip_app
+activeadmin+paperclipで画像管理
