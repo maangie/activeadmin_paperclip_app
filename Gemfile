@@ -42,6 +42,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
+gem 'paperclip' # Easy file attachment management for ActiveRecord.
+
 group :development, :test do
   # powerful alternative to the standard IRB shell for Ruby.
   gem 'pry-rails'
